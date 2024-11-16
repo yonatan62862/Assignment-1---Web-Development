@@ -1,0 +1,31 @@
+###
+
+GET http://localhost:3000/
+
+###
+
+GET http://localhost:3000/posts
+
+###
+
+GET http://localhost:3000/posts/67363777c1967a35dd38e898
+
+
+###
+
+GET http://localhost:3000/posts?sender=Sasson
+
+###
+
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+    "sender": "Yonatan",
+    "title": "My second post",
+    "content": "This is my second post"
+}
+
+###
+
+DELETE http://localhost:3000/posts/67339d0e0509f5a3a869d9d1
